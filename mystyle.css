@@ -1,6 +1,6 @@
 body{
 	font-size: large;
-
+	font-family: 'Calibri', sans-serif;
 }
 .page_content{
 	background-color: white;
@@ -36,7 +36,7 @@ a.specialCategory{
 	padding: .4em .75em;
 }
 img {
-	border-radius: 2%;
+	/*border-radius: 2%;*/
 	/*filter: saturate(100%) brightness(100%) contrast(68.75%);*/
 	image-rendering: pixelated; /* For pixel art or sharp images */
 }

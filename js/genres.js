@@ -1,10 +1,12 @@
 var genres = [
 'animation',
 'comedy',
+'drug',
 'fantasy',
 'religious',
 'romance',
-'science-fiction'
+'science-fiction',
+'superhero'
 ];
 
 /*
@@ -18,6 +20,7 @@ var genres = [
 'crime',
 'disaster',
 'drama',
+'drug',
 'fantasy',
 'foreign',
 'horror',

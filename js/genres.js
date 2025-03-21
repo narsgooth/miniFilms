@@ -1,8 +1,11 @@
 var genres = [
+'3d',
 'animation',
 'comedy',
+'drama',
 'drug',
 'fantasy',
+'historical',
 'musical',
 'religious',
 'romance',

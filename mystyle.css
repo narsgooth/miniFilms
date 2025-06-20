@@ -1,9 +1,10 @@
 body{
 	font-size: large;
 	font-family: 'Calibri', sans-serif;
+	background-color: LightGrey;
 }
 .page_content{
-	background-color: white;
+	background-color: Black;
 	width: 1756px;
 	
 	border-style: solid;
@@ -11,10 +12,10 @@ body{
 	border-color: yellow;
 }
 .greyBar{
-	background-color: white;
+	background-color: WhiteSmoke;
 }
 .greyText{
-	color: grey;
+	color: DarkGoldenRod;
 }
 .leftAlign{
 	text-align: left;
@@ -28,12 +29,22 @@ td {
 	vertical-align: top;
 	width:400px;
 }
+a:link{
+	color: DarkGoldenRod;
+}
+
+a:visited {
+	color: Grey;
+}
 a.specialCategory{
 	font-size: large;    
 	color: black;
 	text-decoration: none;
 	background-color: LightGrey;
 	padding: .4em .75em;
+}
+b{
+	color: DarkGoldenRod;
 }
 img {
 	/*border-radius: 2%;*/

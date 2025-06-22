@@ -1,5 +1,6 @@
 var genres = [
 '3d',
+'action-adventure',
 'animation',
 'comedy',
 'drama',

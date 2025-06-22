@@ -2,8 +2,9 @@
 <html lang="en">
 	<head>
 		<title>New | miniFilms.cf</title>
+		<link rel="icon" href="favicon.png" type="image/png">
 		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
-</head>
+	</head>
 	<body>
 		<center>	
 			
@@ -51,6 +52,7 @@
 				
 				<br/>
 				<table id="videos">
+					<div id="loading">loading...</div>
 				</table>
 			</div>
 			<p id='playlist'></p>
@@ -131,7 +133,7 @@ function getNew()
 	}	
 	var sorted = sortArrays([newSongsIndices,newSongs]);	
 	newSongs = sorted[1];
-	for (var i = newSongs.length-1 ; i >=newSongs.length-240 ; i--) 
+	for (var i = newSongs.length-1 ; i >=newSongs.length-60 ; i--) 
 	{
 		if(c==0)
 			row= table.insertRow();

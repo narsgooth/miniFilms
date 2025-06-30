@@ -9,6 +9,7 @@ var genres = [
 'historical',
 'musical',
 'mystery',
+'horror',
 'religious',
 'romance',
 'science-fiction',

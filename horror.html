@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Horror | miniFilms.cf</title>
+		<link rel="icon" href="favicon.png" type="image/png">
+		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
+	</head>
+	<body>
+		<center>
+			<div class="page_content">
+				<a href="./"><img class="noContrast" src="logo.png" alt = "miniFilms" ><br/></a>
+				<br/>
+				<div class="greyBar">
+					<br/>
+					<table>
+						<tr>
+							<b>HORROR</b>&emsp;
+						</tr>
+						<tr>
+							<form action="search">								 
+								<input name="q" size="40" placeholder="1000+ videos to search from...">&emsp;
+								<input type="submit" style="font-size: normal;"title="Search" value="🔎︎">
+							</form>&emsp;
+						</tr>
+						<tr>
+							<label class="container">R-rated
+								<input type="checkbox" id="accept2" name="accept2" checked="checked">
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<label class="container">X-rated
+								<input type="checkbox" id="accept" name="accept" >
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<button id="btn" title="Filter by Rating">Filter</button>&emsp;
+						</tr>
+						|&emsp;
+						<tr>
+							<button id="sort" title="Sort by Date Added" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" title="Playlist Mode" onClick="injectButtons()">&#9836;</button>
+						</tr>
+					<br/>
+					<br/>
+				</div>
+				
+				<br/>
+				<table id="videos">
+					<tr>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=dwD4JZsAuew" target="_blank"><img src="i/m89.jpg"><br/>Black Swan (2010) | Attack It! Scene</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=8xtUgZCF1Ak" target="_blank"><img src="i/m90.jpg"><br/>Apollo 18 (2011) | Open the door</a></td>	
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=n8FbMY-quW4" target="_blank"><img src="i/m91.jpg"><br/>28 Days Later (2002) | Opening Scene</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=az5NDvQ41ys" target="_blank"><img src="i/m92.jpg"><br/>The Texas Chainsaw Massacre (2003) | Slaughterhouse</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=fHqC5LN9Czo" target="_blank"><img src="i/m93.jpg"><br/>Nothing Left to Fear (2013) | House of Screams</a></td>
+						<td class="mature"><a href="https://www.youtube.com/watch?v=qHmR_bxKdh8" target="_blank"><img src="i/m94.jpg"><br/>The Human Centipede (2009) | The Operation</a></td>
+					</tr>
+					<tr>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=OuoVmvNxE8I" target="_blank"><img src="i/m95.jpg"><br/>The Descent Opening Scene (2005) | Car Crash Scene</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=7bmB4RhsYgQ" target="_blank"><img src="i/m96.jpg"><br/>Saw (2004) | Lawrence Saws Off His Foot</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=POrQRuhAf6k" target="_blank"><img src="i/m97.jpg"><br/>The Omen (2006) | It's All For You</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=3pmt3x6ckhM" target="_blank"><img src="i/m98.jpg"><br/>Prom Night (2008) | A Prom Night to Die For</a></td>
+					</tr>
+				</table>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
+		<br>
+		</center>
+	</body>
+	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+</html>

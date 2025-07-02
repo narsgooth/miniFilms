@@ -14,7 +14,9 @@ var genres = [
 'religious',
 'romance',
 'science-fiction',
-'superhero'
+'stop-motion',
+'superhero',
+'interviews'
 ];
 
 /*

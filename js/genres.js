@@ -7,6 +7,7 @@ var genres = [
 'drama',
 'drug',
 'fantasy',
+'foreign',
 'historical',
 'musical',
 'mystery',

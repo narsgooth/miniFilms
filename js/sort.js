@@ -27,13 +27,13 @@ function sortTable() {
 				row= table.insertRow();
 			
 			let data = row.insertCell(c);
-			if(newSongs[i].includes("'explicit'") ||newSongs[i].includes('"explicit"') )
+			if(newSongs[i].includes("'r'") ||newSongs[i].includes('"r"') )
 			{
-				data.classList.add('explicit');
+				data.classList.add('r');
 			}
-			if(newSongs[i].includes("'mature'") ||newSongs[i].includes('"mature"') )
+			if(newSongs[i].includes("'x'") ||newSongs[i].includes('"x"') )
 			{
-				data.classList.add('mature');
+				data.classList.add('x');
 			}
 			data.innerHTML = newSongs[i];
 			data.parentElement.innerHTML+='\n';
@@ -41,8 +41,8 @@ function sortTable() {
 			if(c>5)
 				c=0;
 		}
-		if(matureHidden)
-			Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {
+		if(xHidden)
+			Array.prototype.forEach.call(document.getElementsByClassName("x"), function(el) {
 					el.style.visibility = "hidden";			
 				});
 		isSorted = true;

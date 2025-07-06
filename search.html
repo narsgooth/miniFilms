@@ -139,7 +139,7 @@ function search(query)
 					if(indexAppears < minIndex)
 					{
 						minIndex = indexAppears;
-						var bumpList = ["mature","remix","cover","parody","concert","live","mashup","bass boosted"];
+						var bumpList = ["x","remix","cover","parody","concert","live","mashup","bass boosted"];
 						for(var l = 0; l< bumpList.length; l++)
 							if(current.toLowerCase().includes(bumpList[l]))
 							{
@@ -161,13 +161,13 @@ function search(query)
 		if(c==0)
 			row= table.insertRow();
 		let data = row.insertCell(c);
-		if(resultsList[i].includes("'explicit'") ||resultsList[i].includes('"explicit"') )
+		if(resultsList[i].includes("'r'") ||resultsList[i].includes('"r"') )
 		{
-			data.classList.add('explicit');
+			data.classList.add('r');
 		}
-		if(resultsList[i].includes("'mature'") ||resultsList[i].includes('"mature"') )
+		if(resultsList[i].includes("'x'") ||resultsList[i].includes('"x"') )
 		{
-			data.classList.add('mature');
+			data.classList.add('x');
 		}
 		data.innerHTML = resultsList[i];
 		data.parentElement.innerHTML+='\n';
@@ -180,7 +180,7 @@ function search(query)
 	document.getElementById("videos").innerHTML = numResults+" results<br/>"+document.getElementById("videos").innerHTML ;
 	document.getElementById("videos").innerHTML += "</tr></tbody>";
 	
-	Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {
+	Array.prototype.forEach.call(document.getElementsByClassName("x"), function(el) {
 			el.style.visibility = "hidden";			
 		});
 }

@@ -1,7 +1,7 @@
 //init
-explicitHidden = false;
-matureHidden = true;
-Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {
+rHidden = false;
+xHidden = true;
+Array.prototype.forEach.call(document.getElementsByClassName("x"), function(el) {
 	el.style.visibility = "hidden";
 });		
 //update
@@ -12,27 +12,27 @@ const cb = document.querySelector('#accept');
 const btn = document.querySelector('#btn');
 btn.onclick = () => {
 	if(!cb.checked){
-		Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {
+		Array.prototype.forEach.call(document.getElementsByClassName("x"), function(el) {
 			el.style.visibility = "hidden";		
-			matureHidden = true;
+			xHidden = true;
 		});
 	}
 	else {
-		Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {
+		Array.prototype.forEach.call(document.getElementsByClassName("x"), function(el) {
 			el.style.visibility = "visible";
-			matureHidden = false;
+			xHidden = false;
 		});
 	}
 	if(!cb2.checked){
-		Array.prototype.forEach.call(document.getElementsByClassName("explicit"), function(el) {
+		Array.prototype.forEach.call(document.getElementsByClassName("r"), function(el) {
 			el.style.visibility = "hidden";
-			explicitHidden = true;
+			rHidden = true;
 		});
 	}
 	else {
-		Array.prototype.forEach.call(document.getElementsByClassName("explicit"), function(el) {
+		Array.prototype.forEach.call(document.getElementsByClassName("r"), function(el) {
 			el.style.visibility = "visible";
-			explicitHidden = false;
+			rHidden = false;
 		});
 	}
 };

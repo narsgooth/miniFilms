@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Anime | miniFilms.cf</title>
+		<link rel="icon" href="favicon.png" type="image/png">
+		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
+	</head>
+	<body>
+		<center>
+			<div class="page_content">
+				<a href="./"><img class="noContrast" src="logo.png" alt = "miniFilms" ><br/></a>
+				<br/>
+				<div class="greyBar">
+					<br/>
+					<table>
+						<tr>
+							<b>ANIME</b>&emsp;
+						</tr>
+						<tr>
+							<form action="search">								 
+								<input name="q" size="40" placeholder="1000+ videos to search from...">&emsp;
+								<input type="submit" style="font-size: normal;"title="Search" value="🔎︎">
+							</form>&emsp;
+						</tr>
+						<tr>
+							<label class="container">R-rated
+								<input type="checkbox" id="accept2" name="accept2" checked="checked">
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<label class="container">X-rated
+								<input type="checkbox" id="accept" name="accept" >
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<button id="btn" title="Filter by Rating">Filter</button>&emsp;
+						</tr>
+						|&emsp;
+						<tr>
+							<button id="sort" title="Sort by Date Added" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" title="Playlist Mode" onClick="injectButtons()">&#9836;</button>
+						</tr>
+					<br/>
+					<br/>
+				</div>
+				
+				<br/>
+				<table id="videos">
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=bMMXrp86Afc" target="_blank"><img src="i/m197.jpg"><br/>Death Note (2006) | Light picks up the Death Note (E01)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=VkfMVVDDBM0" target="_blank"><img src="i/m201.jpg"><br/>JoJo's Bizarre Adventure (2012) | Yoshikage Kira's Beautiful Picnic (S03E21)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=qrMGa7-Jgaw" target="_blank"><img src="i/m202.jpg"><br/>Inuyasha (2006) | The Girl Who Overcame Time and the Boy Who Was Just Overcome (S01E01)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=bH1bEyHkI8w" target="_blank"><img src="i/m203.jpg"><br/>Polar Bear Cafe (2012) | I'm Panda's best friend! (E44)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=km2OPUctni4" target="_blank"><img src="i/m204.jpg"><br/>One Punch Man (2015) | Saitama vs Genos Fight (S01E05)</a></td>
+					</tr>
+				</table>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
+		<br>
+		</center>
+	</body>
+	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+</html>

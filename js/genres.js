@@ -5,6 +5,7 @@ var genres = [
 'animation',
 'college',
 'comedy',
+'crime',
 'drama',
 'drug',
 'fantasy',

@@ -14,14 +14,20 @@ function sortTable() {
 			if(list[i].includes('target="_blank"'))
 			{
 				newSongs.push(list[i]);
-				newSongsIndices.push(parseInt(list[i].split("i/s")[1].split(".jpg")[0]));
+				if(list[i].includes('(') && list[i].includes(')') )
+				{
+					//console.log(list[i]);
+					var filmYear = parseInt(list[i].split('.jpg')[1].split("(")[1].split(")")[0] );
+					newSongsIndices.push(filmYear);
+					
+				}
 			}
 		}	
 		var sorted = sortArrays([newSongsIndices,newSongs]);	
 		newSongs = sorted[1];
 		table.innerHTML="";
 		
-		for (var i = newSongs.length-1 ; i >=0  ; i--) 
+		for (var i = 0 ; i < newSongs.length  ; i++) 
 		{
 			if(c==0)
 				row= table.insertRow();

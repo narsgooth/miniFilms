@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>VFX | miniFilms.cf</title>
+		<link rel="icon" href="favicon.png" type="image/png">
+		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
+	</head>
+	<body>
+		<center>
+			<div class="page_content">
+				<a href="./"><img class="noContrast" src="logo.png" alt = "miniFilms" ><br/></a>
+				<br/>
+				<div class="greyBar">
+					<br/>
+					<table>
+						<tr>
+							<b>VFX</b>&emsp;
+						</tr>
+						<tr>
+							<form action="search">
+								<input name="q" size="40" placeholder="1000+ videos to search from...">&emsp;
+								<input type="submit" style="font-size: normal;"title="Search" value="🔎︎">
+							</form>&emsp;
+						</tr>
+						<tr>
+							<label class="container">R-rated
+								<input type="checkbox" id="accept2" name="accept2" checked="checked">
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<label class="container">X-rated
+								<input type="checkbox" id="accept" name="accept" >
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<button id="btn" title="Filter by Rating">Filter</button>&emsp;
+						</tr>
+						|&emsp;
+						<tr>
+							<button id="sort" title="Sort by Year" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" title="Playlist Mode" onClick="injectButtons()">&#9836;</button>
+						</tr>
+					<br/>
+					<br/>
+				</div>
+				
+				<br/>
+				<table id="videos">
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=wowsrLSrB3s" target="_blank"><img src="i/m326.jpg"><br/>Arseny Gutov | Pop Attract Houdini</a></td>
+						<td><a href="https://www.youtube.com/watch?v=YvDKOuAL9x8" target="_blank"><img src="i/m331.jpg"><br/>Jack Yu | Cracked ice lake</a></td>
+						<td><a href="https://www.youtube.com/watch?v=QnHfcScI-VQ" target="_blank"><img src="i/m327.jpg"><br/>Jack Yu | Leopard skin simple sim with Houdini vellum</a></td>
+						<td><a href="https://www.youtube.com/watch?v=LXPKA5cp-2I" target="_blank"><img src="i/m328.jpg"><br/>Jack Yu | MudSlide VFX breakdown</a></td>
+						<td><a href="https://www.youtube.com/watch?v=ki-dEUaFYHU" target="_blank"><img src="i/m332.jpg"><br/>Jack Yu | Shark leaping VFX breakdown</a></td>
+						<td><a href="https://www.youtube.com/watch?v=g_G4m_599Zc" target="_blank"><img src="i/m333.jpg"><br/>Jack Yu | Storm ocean VFX breakdown</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=1V9eIcrliV8" target="_blank"><img src="i/m329.jpg"><br/>Jack Yu | Whitewater shader</a></td>
+						<td><a href="https://www.youtube.com/watch?v=9y4y2gWM0TU" target="_blank"><img src="i/m325.jpg"><br/>Joel Paulin | Bullet vs coffee mug</a></td>
+						<td><a href="https://www.youtube.com/watch?v=nW1pxpAw-4Y" target="_blank"><img src="i/m330.jpg"><br/>Sipos Attila | Houdini Whitewater tests</a></td>
+					</tr>
+				</table>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
+		<br>
+		</center>
+	</body>
+	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+</html>

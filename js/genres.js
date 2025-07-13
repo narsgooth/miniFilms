@@ -20,6 +20,7 @@ var genres = [
 'science-fiction',
 'stop-motion',
 'superhero',
+'vfx',
 'western',
 'interviews'
 ];

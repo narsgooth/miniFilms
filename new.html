@@ -153,7 +153,7 @@ function getNew()
 			c=0;
 	}
 	document.getElementById("loading").innerHTML = "";
-	document.getElementById("videos").innerHTML = numResults+" videos<br/>"+document.getElementById("videos").innerHTML ;
+	document.getElementById("videos").innerHTML = numResults+" videos<br/>"+document.getElementById("clips").innerHTML ;
 	document.getElementById("videos").innerHTML += "</tr></tbody>";
 	Array.prototype.forEach.call(document.getElementsByClassName("x"), function(el) {
 			el.style.visibility = "hidden";			

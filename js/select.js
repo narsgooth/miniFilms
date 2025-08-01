@@ -22,7 +22,7 @@ function add(obj)
 			obj.innerHTML='+';
 		}
 	}
-	obj.style.backgroundColor=(playlist.includes(id)?'LightSkyBlue':'lightgrey');
+	obj.style.backgroundColor=(playlist.includes(id)?'Yellow':'LightGrey');
 	
 	document.getElementById('playlist').innerHTML='';
 	for(var i = 0 ; i < titlesList.length ; i ++)
@@ -64,7 +64,7 @@ function injectButtons()
 		table.innerHTML = lines.join('\n');
 		//table.parentElement.innerHTML += "<table><td style='width:456px'></td><td style='width:700px'><p id='playlist'></p></td><td></td></table><button onclick='play()'>Play</button>&emsp;";
 		isSelected=true;
-		document.getElementById('select').style.backgroundColor = 'LightSkyBlue';	
+		document.getElementById('select').style.backgroundColor = 'Yellow';	
 		
 		document.getElementById("playlist").style.visibility = "visible";
 		document.getElementById("playButton").style.visibility = "visible";
